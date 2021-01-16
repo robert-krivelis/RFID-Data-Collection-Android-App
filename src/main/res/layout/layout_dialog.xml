@@ -1,45 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/scanthetube"
-        android:layout_width="287dp"
-        android:layout_height="35dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Scan the tube to begin the test!"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/bringandhold"
-        android:layout_width="291dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="32dp"
-        android:text="Bring and hold the tube with the sticker up to the back of the phone."
-        android:textColor="@android:color/background_dark"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<pl.droidsonroids.gif.GifImageView
+    android:id="@+id/gifImageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/phone_scan" />
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView2"
-        android:layout_width="277dp"
-        android:layout_height="188dp"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/phone_scan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bringandhold" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

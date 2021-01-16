@@ -9,32 +9,24 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-public class NewTestDialog extends AppCompatDialogFragment {
+public class NewTestDialog extends AppCompatActivity {
 
-    @NonNull
-    @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder alertadd = new AlertDialog.Builder(NewTestDialog.this);
+        LayoutInflater factory = LayoutInflater.from(NewTestDialog.this);
+        final View view = factory.inflate(R.layout.layout_dialog, null);
+        alertadd.setView(view);
+        alertadd.setNeutralButton("Here!", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dlg, int sumthin) {
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        View view = inflater.inflate(R.layout.layout_dialog, null);
+            }
+        });
 
-        builder.setView(view)
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+        alertadd.show();
 
-                    }
-                })
-                .setPositiveButton("I have trouble scanning", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-
-        return builder.create();
+        return alertadd.create();
     }
 }
