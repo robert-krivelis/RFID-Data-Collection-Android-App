@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,8 @@ public class HomeActivity extends AppCompatActivity {
         startTestDialog.setPositiveButton("I have trouble scanning", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dlg, int sumthin) {
 
+                Intent intent = new Intent(getApplicationContext(), QuestionsActivity.class);
+                startActivity(intent);
             }
         });
         startTestDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
