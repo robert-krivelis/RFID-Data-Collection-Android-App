@@ -10,8 +10,12 @@ Our initial solution consisted of a test tube holder enclosure with a touch scre
 ![nist box](https://user-images.githubusercontent.com/43624936/156863596-ee6d51f4-213d-43e3-8b0b-ccf5a55b0bf1.jpg)
 
 
-We created the solution for the design fair,  
+We created the solution for the hackathon, where I worked on the python software powering the raspberry pi as well as designing and configuring the electrical design for the connections between the raspberry pi, sensors, and battery. It was designed to look like a treasure chest to appeal to our youth-focused customers.
+![Team photo at the hackathon](https://user-images.githubusercontent.com/43624936/156863639-0cf6dc93-0422-4c71-ad67-1d93986010b5.jpg)
 
+Our device worked well enough for the hackathon, but had problems for sustainability. It took a long time to make changes to the firmware, as the touchscreen did not work simultaneously with HDMI outputs, creating a long feedback loop between development iterations. In addition, the device was not easily scalable -- it took a lot of time to set up and get running because of the fragility of the mechanical parts, the soldering required, and the time it took to flash firmware. In the future, an improved version would address these problems.
 
 ## Final Solutions
-An android
+After the hackathon was completed, the team split ways onto other journeys. Our sponsors, the researchers, reached out to us about continuing the project after. I had some time to continue working on the project, so I worked towards the final solution we came up with. Our solution was to make an app that would use the RFID chips in android phones to write data into the RFID labels on the test vials. This allowed us to scale our solution easily and reduced the development and iteration time for making changes to our software.
+
+Our sponspors ran into their own funding issues for their studies, so this project was put on pause for the time being. The project now lives in this repo and is largely done: many of the key components like writing to the RFID labels and recording user data to the phones internal memory is figured out. While this project is currently stalled, during the time I worked on it, it was super fun to work on challenging problems with amazing people.   
