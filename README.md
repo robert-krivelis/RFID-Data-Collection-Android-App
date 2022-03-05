@@ -17,6 +17,7 @@ Our device worked well enough for the hackathon, but had problems for sustainabi
 
 ## Final Solutions
 After the hackathon was completed, the team split ways onto other journeys. Our sponsors, the researchers, reached out to us about continuing the project after. I had some time to continue working on the project, so I worked towards the final solution we came up with. Our solution was to make an app that would use the RFID chips in android phones to write data into the RFID labels on the test vials. This allowed us to scale our solution easily and reduced the development and iteration time for making changes to our software. Below is the design I created and coded for the app:
+
 ![nist_animation](https://user-images.githubusercontent.com/43624936/156864778-331c2096-0c29-4b12-b7fc-f99559fd149c.gif)
 
 Our sponspors ran into their own funding issues for their studies, so this project was put on pause for the time being. The project now lives in this repo and is largely done: many of the key components like writing to the RFID labels and recording user data to the phones internal memory is figured out. While this project is currently stalled, during the time I worked on it, it was super fun to work on challenging problems with amazing people.   
